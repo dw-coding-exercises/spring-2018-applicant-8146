@@ -97,6 +97,7 @@
    (current-elections-link request)])
 
 (defn address-form [_]
+  "TODO: Between validation + HTML generated here (and re-use on search), this could be its own file."
   [:div {:class "address-form"}
    [:h1 "Find my next election"]
    [:form {:action "/search" :method "post"}
